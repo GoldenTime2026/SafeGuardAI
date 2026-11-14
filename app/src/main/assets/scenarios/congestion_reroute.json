@@ -1,0 +1,18 @@
+{
+  "description": "③ 정체 원인 브리핑 & 우회: 2.3km 앞 사고 정체 → 원인·거리·소요시간 한 문장 + '우회할까요?' → (응) 재탐색. 이어서 정체 진입(15km/h 미만 30초) → 내기순환 → (오래 정체 시 휴식 모드 제안 → 응) 앰비언트·송풍 3분, 정체 이탈(35km/h 이상 30초) → 원복",
+  "steps": [
+    { "at": 0, "signal": { "gear": "DRIVE", "speedKmh": 60, "roadSpeedLimitKmh": 80, "minuteOfDay": "18:20" } },
+    { "at": 0, "drive": { "from": [35.2000, 128.6800], "to": [35.2300, 128.6800], "speedKmh": 60 } },
+    { "at": 1000, "answer": "YES" },
+    { "at": 2000, "traffic": {
+        "routing": true,
+        "congestions": [ { "offsetM": 2300, "lengthM": 1200, "timeSec": 540, "avgKmh": 12, "road": "창원대로", "from": "명곡교차로", "to": "도청교차로" } ],
+        "incidents": [ { "type": "ACCIDENT", "lat": 35.2260, "lon": 128.6800, "description": "2차로 추돌사고" } ]
+    } },
+    { "at": 25000, "drive": { "from": [35.2120, 128.6800], "to": [35.2300, 128.6800], "speedKmh": 10 } },
+    { "at": 58000, "answer": "YES" },
+    { "at": 59000, "relax": true },
+    { "at": 75000, "drive": { "from": [35.2160, 128.6800], "to": [35.2300, 128.6800], "speedKmh": 50 } },
+    { "at": 115000, "reset": true }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "description": "정비 알림 + 크루즈 확인: 정차 중 '엔진오일 교체까지 800킬로미터'(지난 교체 20,000km, 현재 29,200km) → 출발, 크루즈 80km/h로 스쿨존 접근 → '크루즈를 끄고 서행' → 폭우 속 크루즈 80km/h(권장 50) → 낮추라는 안내 → 주행 중 엔진오일 부족 경고",
+  "steps": [
+    { "at": 0, "serviceRecord": { "ENGINE_OIL": 20000, "TIRE_ROTATION": 22000, "CABIN_FILTER": 20000, "BRAKE_FLUID": 0 } },
+    { "at": 0, "signal": { "gear": "PARK", "speedKmh": 0, "odometerKm": 29200, "roadSpeedLimitKmh": 60, "minuteOfDay": "16:00" } },
+    { "at": 28000, "signal": { "gear": "DRIVE", "cruiseActive": true, "cruiseTargetKmh": 80, "cautions": [ { "type": "SCHOOL_ZONE", "remainMeters": 400 } ] } },
+    { "at": 28000, "drive": { "from": [35.2200, 128.6800], "to": [35.2400, 128.6800], "speedKmh": 60 } },
+    { "at": 45000, "signal": { "cautions": [], "roadSpeedLimitKmh": 100, "wiper": "HIGH" } },
+    { "at": 75000, "signal": { "wiper": "OFF", "cruiseActive": false, "engineOilLow": true } },
+    { "at": 95000, "reset": true }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "description": "① 센서 가림: 고속도로 주행 중 비 → 폭우(와이퍼 최고) → 전방 충돌방지·차로 유지 보조 경고등이 노랑으로 바뀜 → '폭우로 전방 센서가 가려진 것 같아요. 직접 조향하고 앞차와 거리를 넓히세요' + 주황 조명 → 비가 약해지고 보조 기능 복구 → '다시 켜졌어요'. 실차의 경고등 색 변화는 취급설명서 기준 [확인 필요], 에뮬레이터에는 보조 경고등이 없어 주입",
+  "steps": [
+    { "at": 0, "signal": { "gear": "DRIVE", "speedKmh": 90, "roadSpeedLimitKmh": 100, "wiper": "LOW", "latitude": 35.249324, "longitude": 128.698500, "headingDeg": 90 } },
+    { "at": 0, "telltale": { "FCA": "ON:WHITE", "LFA": "ON:GREEN" } },
+    { "at": 10000, "signal": { "wiper": "HIGH", "speedKmh": 60 } },
+    { "at": 22000, "telltale": { "FCA": "ON:YELLOW", "LFA": "ON:YELLOW" } },
+    { "at": 45000, "signal": { "wiper": "LOW" } },
+    { "at": 47000, "telltale": { "FCA": "ON:WHITE", "LFA": "ON:GREEN" } },
+    { "at": 60000, "reset": true }
+  ]
+}

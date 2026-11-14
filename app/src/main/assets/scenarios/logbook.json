@@ -1,0 +1,15 @@
+{
+  "description": "업무 운행기록부: 계기판 31,250km에서 출발 → 12.4km 주행 → 주차 → '이번 운행 12킬로미터, 업무로 기록할까요?' → '응' → '업무 운행으로 기록했어요'. 설정 화면의 '업무 운행기록부'에 기록이 보이고 국세청 서식 CSV로 저장됨. 시연 중에만 기록을 켬(설정 스위치는 그대로)",
+  "steps": [
+    { "at": 0, "logbook": true },
+    { "at": 0, "serviceRecord": { "ENGINE_OIL": 30000, "TIRE_ROTATION": 30000, "CABIN_FILTER": 30000, "BRAKE_FLUID": 30000 } },
+    { "at": 0, "answer": "YES" },
+    { "at": 0, "signal": { "gear": "PARK", "speedKmh": 0, "odometerKm": 31250.0 } },
+    { "at": 3000, "signal": { "gear": "DRIVE" } },
+    { "at": 3000, "drive": { "from": [35.2280, 128.6810], "to": [35.2300, 128.8700], "speedKmh": 60 } },
+    { "at": 20000, "signal": { "odometerKm": 31262.4 } },
+    { "at": 22000, "stopDrive": true },
+    { "at": 22000, "signal": { "gear": "PARK", "speedKmh": 0 } },
+    { "at": 45000, "reset": true }
+  ]
+}

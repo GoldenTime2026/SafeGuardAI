@@ -1,0 +1,9 @@
+{
+  "description": "1단계 완료 기준: 두 위험이 동시에 오면 우선순위가 높은 것(전방 위험)을 먼저 말한다",
+  "steps": [
+    { "at": 0, "signal": { "gear": "DRIVE", "speedKmh": 80, "wiper": "LOW" } },
+    { "at": 500, "risk": { "level": "WEATHER", "key": "test-weather", "speech": "비가 내립니다. 권장 속도는 64킬로미터입니다.", "screen": "비 · 권장 64 km/h" } },
+    { "at": 500, "risk": { "level": "FORWARD_HAZARD", "key": "test-forward", "speech": "300미터 앞, 미끄러짐 다발 구간입니다.", "screen": "300m 앞 미끄러짐 주의" } },
+    { "at": 20000, "reset": true }
+  ]
+}

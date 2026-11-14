@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Safety Mesh 대시보드</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<style>
+  :root {
+    --bg: #f6f7f9; --panel: #ffffff; --text: #1d2330; --muted: #5f6b7a; --line: #e2e6eb;
+    --accent: #0b5cad; --warn-bg: #fff4d6; --warn-text: #6b4e00;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 15px/1.5 "Pretendard", "Malgun Gothic", system-ui, sans-serif; }
+  header { padding: 20px 24px 12px; }
+  h1 { margin: 0; font-size: 22px; }
+  .sub { color: var(--muted); font-size: 13px; margin-top: 4px; }
+  .demo { margin: 8px 24px 0; padding: 8px 12px; border-radius: 8px; background: var(--warn-bg); color: var(--warn-text); font-size: 13px; display: none; }
+  .controls { display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; padding: 12px 24px; }
+  .controls label { font-size: 13px; color: var(--muted); display: inline-flex; align-items: center; gap: 4px; }
+  select, button, a.btn { font: inherit; font-size: 13px; padding: 5px 10px; border: 1px solid var(--line); border-radius: 6px; background: var(--panel); color: var(--text); text-decoration: none; cursor: pointer; }
+  .chip { display: inline-flex; align-items: center; gap: 5px; padding: 3px 9px; border: 1px solid var(--line); border-radius: 999px; background: var(--panel); font-size: 13px; cursor: pointer; user-select: none; }
+  .chip input { margin: 0; }
+  .dot { width: 10px; height: 10px; border-radius: 2px; display: inline-block; }
+  .tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; padding: 0 24px; }
+  .tile { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; }
+  .tile .k { color: var(--muted); font-size: 12px; }
+  .tile .v { font-size: 24px; font-weight: 700; margin-top: 2px; }
+  main { display: grid; grid-template-columns: minmax(0, 1fr) 460px; gap: 16px; padding: 16px 24px 24px; }
+  #map { height: 560px; border-radius: 10px; border: 1px solid var(--line); background: #dfe4ea; }
+  #mapFallback { display: none; height: 560px; border-radius: 10px; border: 1px dashed var(--line); align-items: center; justify-content: center; color: var(--muted); text-align: center; padding: 24px; }
+  .panel { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 14px; overflow: auto; max-height: 560px; }
+  .panel h2 { font-size: 15px; margin: 0 0 8px; }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  th, td { text-align: left; padding: 6px 4px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { color: var(--muted); font-weight: 600; }
+  td.num { text-align: right; font-variant-numeric: tabular-nums; }
+  td.nowrap, th { white-space: nowrap; }
+  tr.row { cursor: pointer; }
+  tr.row:hover { background: #f0f4f9; }
+  footer { color: var(--muted); font-size: 12px; padding: 0 24px 24px; }
+  @media (max-width: 900px) { main { grid-template-columns: 1fr; } #map, #mapFallback { height: 420px; } }
+</style>
+</head>
+<body>
+<header>
+  <h1>Safety Mesh · 도로 위험 구간</h1>
+  <div class="sub">세이프가드 AI 사용 차량의 익명 신호를 약 500m 격자로 모았습니다. 서로 다른 차량(일 단위) 3대 이상이 보고한 격자만 표시합니다.</div>
+</header>
+<div class="demo" id="demo">이 화면에는 <b>시연용 가상 데이터</b>가 포함돼 있습니다. 실제 운영 데이터가 아닙니다.</div>
+
+<div class="controls">
+  <label>기간
+    <select id="days">
+      <option value="7">최근 7일</option>
+      <option value="30">최근 30일</option>
+      <option value="90">최근 90일</option>
+      <option value="365" selected>최근 1년</option>
+    </select>
+  </label>
+  <span id="chips"></span>
+  <a class="btn" id="csv" href="#">CSV 내려받기</a>
+</div>
+
+<div class="tiles">
+  <div class="tile"><div class="k">위험 격자</div><div class="v" id="tCells">-</div></div>
+  <div class="tile"><div class="k">보고 차량·일 합계</div><div class="v" id="tCars">-</div></div>
+  <div class="tile"><div class="k">가장 많은 유형</div><div class="v" id="tTop">-</div></div>
+  <div class="tile"><div class="k">관측소 없는 도로 보완</div><div class="v" id="tIce">-</div></div>
+</div>
+
+<main>
+  <div>
+    <div id="map"></div>
+    <div id="mapFallback">지도를 불러오지 못했습니다(인터넷 연결 필요). 오른쪽 목록과 CSV는 그대로 사용할 수 있습니다.</div>
+  </div>
+  <div class="panel">
+    <h2>점검 우선순위 (차량·일 많은 순)</h2>
+    <table>
+      <thead><tr><th>#</th><th>위치</th><th>주요 유형</th><th class="num">차량·일</th><th>최근</th></tr></thead>
+      <tbody id="rows"></tbody>
+    </table>
+  </div>
+</main>
+<footer>
+  수집 원칙: 차대번호·계정·이름 없음, 매일 바뀌는 기기 토큰은 당일 해시로만 집계 후 삭제, 정확한 주행 경로는 저장하지 않음.
+  지도 © OpenStreetMap contributors.
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script>
+const TYPES = {
+  SLIP: { label: "미끄러짐", color: "#d9480f" },
+  ICE: { label: "결빙", color: "#1c7ed6" },
+  STOPPED_VEHICLE: { label: "비상등 정차", color: "#e03131" },
+  HARD_BRAKING: { label: "급정거", color: "#f59f00" },
+  HEAVY_RAIN: { label: "폭우", color: "#5f3dc4" },
+  RAIN: { label: "비", color: "#748ffc" },
+  CRASH: { label: "사고", color: "#862e9c" },
+  DEBRIS: { label: "낙하물", color: "#495057" },
+  POTHOLE: { label: "포트홀", color: "#868e96" },
+  ACCIDENT: { label: "사고 제보", color: "#a61e4d" },
+  OTHER: { label: "기타 제보", color: "#adb5bd" },
+  NEAR_MISS: { label: "아차사고(충돌 경고)", color: "#c2255c" },
+  LANE_FADE: { label: "차선 흐림", color: "#2b8a3e" },
+};
+// Road hazards first (the road operator's view); the rain layers are the weather service's view.
+const DEFAULT_ON = ["SLIP", "ICE", "STOPPED_VEHICLE", "HARD_BRAKING", "CRASH", "NEAR_MISS"];
+const selected = new Set(DEFAULT_ON);
+
+const chips = document.getElementById("chips");
+for (const [key, t] of Object.entries(TYPES)) {
+  const label = document.createElement("label");
+  label.className = "chip";
+  label.innerHTML = `<input type="checkbox" ${selected.has(key) ? "checked" : ""}><span class="dot" style="background:${t.color}"></span>${t.label}`;
+  label.querySelector("input").addEventListener("change", e => {
+    e.target.checked ? selected.add(key) : selected.delete(key);
+    load();
+  });
+  chips.appendChild(label);
+}
+document.getElementById("days").addEventListener("change", load);
+
+let map = null, layer = null;
+if (window.L) {
+  map = L.map("map").setView([35.248, 128.74], 12);
+  L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", { maxZoom: 18, attribution: "© OpenStreetMap" }).addTo(map);
+} else {
+  document.getElementById("map").style.display = "none";
+  document.getElementById("mapFallback").style.display = "flex";
+}
+
+function leading(types) {
+  return Object.entries(types).sort((a, b) => b[1].cars - a[1].cars)[0];
+}
+
+async function load() {
+  const days = document.getElementById("days").value;
+  const query = `types=${[...selected].join(",")}&days=${days}`;
+  document.getElementById("csv").href = `/v1/mesh/cells.csv?${query}`;
+  const data = await (await fetch(`/v1/mesh/cells?${query}`)).json();
+  const features = data.features;
+
+  const byType = {};
+  let cars = 0, demo = false, iceCells = 0;
+  for (const f of features) {
+    cars += f.properties.cars;
+    demo = demo || f.properties.demo;
+    if (f.properties.types.ICE) iceCells++;
+    for (const [k, v] of Object.entries(f.properties.types)) byType[k] = (byType[k] || 0) + v.cars;
+  }
+  const topType = Object.entries(byType).sort((a, b) => b[1] - a[1])[0];
+  document.getElementById("tCells").textContent = features.length.toLocaleString();
+  document.getElementById("tCars").textContent = cars.toLocaleString();
+  document.getElementById("tTop").textContent = topType ? TYPES[topType[0]]?.label ?? topType[0] : "-";
+  document.getElementById("tIce").textContent = `결빙 격자 ${iceCells}`;
+  document.getElementById("demo").style.display = demo ? "block" : "none";
+
+  const maxCars = Math.max(1, ...features.map(f => f.properties.cars));
+  if (map) {
+    if (layer) layer.remove();
+    layer = L.geoJSON(data, {
+      style: f => {
+        const [k] = leading(f.properties.types);
+        return { color: TYPES[k]?.color ?? "#333", weight: 1, fillOpacity: 0.25 + 0.55 * f.properties.cars / maxCars };
+      },
+      onEachFeature: (f, l) => l.bindPopup(popup(f.properties)),
+    }).addTo(map);
+  }
+
+  const rows = document.getElementById("rows");
+  rows.innerHTML = "";
+  features.slice(0, 15).forEach((f, i) => {
+    const p = f.properties;
+    const [k, v] = leading(p.types);
+    const tr = document.createElement("tr");
+    tr.className = "row";
+    tr.innerHTML = `<td>${i + 1}</td><td>${p.near || `${p.lat.toFixed(4)}, ${p.lon.toFixed(4)}`}</td>` +
+      `<td class="nowrap"><span class="dot" style="background:${TYPES[k]?.color}"></span> ${TYPES[k]?.label ?? k}</td>` +
+      `<td class="num">${p.cars}</td><td class="nowrap">${v.lastDay.slice(5)}</td>`;
+    tr.addEventListener("click", () => map && map.setView([p.lat, p.lon], 15));
+    rows.appendChild(tr);
+  });
+  if (!features.length) rows.innerHTML = `<tr><td colspan="5">이 기간·유형으로 공개 기준(서로 다른 차량 3대)을 넘은 격자가 없습니다.</td></tr>`;
+}
+
+function popup(p) {
+  const lines = Object.entries(p.types).sort((a, b) => b[1].cars - a[1].cars)
+    .map(([k, v]) => `${TYPES[k]?.label ?? k}: 차량·일 ${v.cars} (보고 ${v.events}건, 최근 ${v.lastDay})`);
+  return `<b>${p.near || "격자"}</b><br>좌표 ${p.lat.toFixed(4)}, ${p.lon.toFixed(4)}<br>${lines.join("<br>")}`;
+}
+
+load();
+</script>
+</body>
+</html>

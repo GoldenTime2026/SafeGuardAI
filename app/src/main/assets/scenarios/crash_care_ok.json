@@ -1,0 +1,10 @@
+{
+  "description": "⑥ 사고 골든타임 케어(운전자 응답): 에어백 전개 → '괜찮으세요?' → '괜찮아' → 대피 요령 + 119에 말할 위치 → '보호자에게 알릴까요?' → '응' → 보호자 알림(시연)",
+  "steps": [
+    { "at": 0, "signal": { "gear": "DRIVE", "speedKmh": 90, "roadSpeedLimitKmh": 100, "latitude": 35.249324, "longitude": 128.703760, "headingDeg": 90 } },
+    { "at": 5000, "reply": "괜찮아" },
+    { "at": 5000, "answer": "YES" },
+    { "at": 6000, "signal": { "airbagDeployed": true, "speedKmh": 0 } },
+    { "at": 60000, "reset": true }
+  ]
+}

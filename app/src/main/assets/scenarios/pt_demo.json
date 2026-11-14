@@ -1,0 +1,40 @@
+{
+  "description": "PT 통합 시연(약 5분, 남해선 부산 방향): ① 폭우(권장 속도·시야 확보) → ② 1km 앞 비상등 정차 차량 → ③ 사고 정체 브리핑·우회(응) → ④ 졸음 케어(휴식 권유·각성·졸음쉼터 경유·파워냅 15초) → ⑥ 사고 골든타임 케어(응답 없음 → 보호자 알림·119 위치·대피 요령)",
+  "steps": [
+    { "at": 0, "signal": { "gear": "DRIVE", "roadSpeedLimitKmh": 100, "minuteOfDay": "14:30", "wiper": "OFF" } },
+    { "at": 0, "drive": { "from": [35.249324, 128.6985], "to": [35.249324, 128.8200], "speedKmh": 100 } },
+    { "at": 3000, "signal": { "wiper": "HIGH" } },
+    { "at": 14000, "drive": { "from": [35.249324, 128.7019], "to": [35.249324, 128.8200], "speedKmh": 55 } },
+
+    { "at": 30000, "signal": { "wiper": "LOW" } },
+    { "at": 30000, "crowd": { "kind": "HAZARD_LIGHTS", "lat": 35.249324, "lon": 128.7188 } },
+
+    { "at": 65000, "answer": "YES" },
+    { "at": 66000, "traffic": {
+        "routing": true,
+        "congestions": [ { "offsetM": 2300, "lengthM": 1200, "timeSec": 540, "avgKmh": 12, "road": "남해고속도로", "from": "진례분기점", "to": "진영휴게소" } ],
+        "incidents": [ { "type": "ACCIDENT", "lat": 35.249324, "lon": 128.7500, "description": "2차로 추돌사고" } ]
+    } },
+    { "at": 100000, "traffic": { "routing": false } },
+
+    { "at": 110000, "napSeconds": 15 },
+    { "at": 110000, "signal": { "wiper": "OFF" } },
+    { "at": 110000, "drive": { "from": [35.249324, 128.7100], "to": [35.249324, 128.7590], "speedKmh": 80 } },
+    { "at": 111500, "signal": { "drivingMinutes": 125 } },
+    { "at": 125000, "telltale": { "DRIVER_ATTENTION": "ON" } },
+    { "at": 150000, "answer": "YES" },
+    { "at": 151000, "escalateDrowsy": true },
+    { "at": 180000, "telltale": {} },
+    { "at": 204000, "answer": "YES" },
+    { "at": 205000, "arrive": "진례 졸음쉼터" },
+    { "at": 205000, "stopDrive": true },
+    { "at": 205000, "signal": { "gear": "PARK", "speedKmh": 0, "latitude": 35.249324, "longitude": 128.758979 } },
+
+    { "at": 250000, "reset": true },
+    { "at": 251000, "signal": { "gear": "DRIVE", "speedKmh": 90, "roadSpeedLimitKmh": 100, "latitude": 35.249324, "longitude": 128.703760, "headingDeg": 90 } },
+    { "at": 255000, "silent": true },
+    { "at": 255000, "silent": true },
+    { "at": 256000, "signal": { "airbagDeployed": true, "speedKmh": 0 } },
+    { "at": 320000, "reset": true }
+  ]
+}

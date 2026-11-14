@@ -1,0 +1,10 @@
+{
+  "description": "⑥ 사고 골든타임 케어(응답 없음): 남해선 주행 중 에어백 전개 → 다른 안내 모두 중단 → '괜찮으세요?' → 응답 없음 → 다시 질문 → 응답 없음 → 보호자 알림(1차는 시연: 문자 내용만 화면 표시) + 119에 말할 위치(주소·졸음쉼터 기준 위치·방향·좌표) + 대피 요령(비트밖스)",
+  "steps": [
+    { "at": 0, "signal": { "gear": "DRIVE", "speedKmh": 90, "roadSpeedLimitKmh": 100, "latitude": 35.249324, "longitude": 128.703760, "headingDeg": 90 } },
+    { "at": 5000, "silent": true },
+    { "at": 5000, "silent": true },
+    { "at": 6000, "signal": { "airbagDeployed": true, "speedKmh": 0 } },
+    { "at": 70000, "reset": true }
+  ]
+}

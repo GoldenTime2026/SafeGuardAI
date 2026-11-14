@@ -1,0 +1,9 @@
+{
+  "description": "차량 간 공유(2차 서버 시연): 남해선 부산 방향 100km/h. 앞서간 가상 차량들이 서버에 올린 위험(급정거 2대=정체 꼬리, 사고 차량, 반대 차선 사고)을 30초 안에 받아, 같은 방향 위험만 1km·300m 앞에서 안내. 사고 경고 뒤 이 차가 급감속하면 이 차의 급정거도 서버로 공유. 먼저 PC에서 server/safeguard_server.py와 virtual_cars.py 실행, adb reverse tcp:8787 tcp:8787",
+  "steps": [
+    { "at": 0, "signal": { "gear": "DRIVE", "speedKmh": 100, "roadSpeedLimitKmh": 100 } },
+    { "at": 0, "drive": { "from": [35.249324, 128.698500], "to": [35.249324, 128.759000], "speedKmh": 100 } },
+    { "at": 95000, "drive": { "from": [35.249324, 128.727500], "to": [35.249324, 128.759000], "speedKmh": 40 } },
+    { "at": 150000, "reset": true }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "description": "⑤ 경고등 가이드: 주행 중 타이어 공기압 경고(정비소 방문 권장, 한 문장) → 엔진 과열 경고(즉시 정차, 긴급 끼어들기) → 정차 → 화면에 조치 방법 + 블루핸즈 안내 제안(응) → 경로 안내 요청. 블루핸즈 위치는 데모 지점",
+  "steps": [
+    { "at": 0, "signal": { "gear": "DRIVE", "speedKmh": 50, "roadSpeedLimitKmh": 60 } },
+    { "at": 0, "drive": { "from": [35.2300, 128.6800], "to": [35.2380, 128.6800], "speedKmh": 50 } },
+    { "at": 3000, "telltale": { "TPMS": "ON" } },
+    { "at": 25000, "telltale": { "TPMS": "ON", "ENGINE_TEMPERATURE": "ON" } },
+    { "at": 68000, "answer": "YES" },
+    { "at": 70000, "signal": { "gear": "PARK", "speedKmh": 0 } },
+    { "at": 110000, "reset": true }
+  ]
+}

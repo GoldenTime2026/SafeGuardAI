@@ -1,0 +1,19 @@
+{
+  "description": "세이프가드 스코어: 80km/h 주행 → 20초 과속(120km/h) → 급정거(80→50) → 앞 낙하물 안내 뒤 감속(위험 대응 좋음) → 정차 → 점수·아쉬운 점·이번 주 평균을 한 번에 안내(시연용으로 30초 이상 주행을 한 번의 운전으로 셈, 실제 2분)",
+  "steps": [
+    { "at": 0, "scoreMinTripSeconds": 30 },
+    { "at": 0, "signal": { "gear": "DRIVE", "roadSpeedLimitKmh": 100, "minuteOfDay": "10:00", "seatBeltUnbuckled": false } },
+    { "at": 0, "drive": { "from": [35.249324, 128.6985], "to": [35.249324, 128.7600], "speedKmh": 80 } },
+    { "at": 8000, "drive": { "from": [35.249324, 128.7000], "to": [35.249324, 128.7600], "speedKmh": 120 } },
+    { "at": 28000, "drive": { "from": [35.249324, 128.7070], "to": [35.249324, 128.7600], "speedKmh": 110 } },
+    { "at": 31000, "drive": { "from": [35.249324, 128.7075], "to": [35.249324, 128.7600], "speedKmh": 100 } },
+    { "at": 34000, "drive": { "from": [35.249324, 128.7080], "to": [35.249324, 128.7600], "speedKmh": 90 } },
+    { "at": 37000, "drive": { "from": [35.249324, 128.7085], "to": [35.249324, 128.7600], "speedKmh": 80 } },
+    { "at": 40000, "drive": { "from": [35.249324, 128.7090], "to": [35.249324, 128.7600], "speedKmh": 50 } },
+    { "at": 46000, "risk": { "level": "FORWARD_HAZARD", "key": "score-demo-debris", "speech": "300미터 앞에 낙하물이 있어요. 속도를 줄이세요.", "screen": "300m 앞 낙하물" } },
+    { "at": 50000, "drive": { "from": [35.249324, 128.7100], "to": [35.249324, 128.7600], "speedKmh": 35 } },
+    { "at": 58000, "stopDrive": true },
+    { "at": 58000, "signal": { "gear": "PARK", "speedKmh": 0 } },
+    { "at": 85000, "reset": true }
+  ]
+}

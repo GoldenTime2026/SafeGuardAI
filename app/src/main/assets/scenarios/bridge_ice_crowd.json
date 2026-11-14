@@ -1,0 +1,9 @@
+{
+  "description": "B-4: 국도 교량, 새벽 영하, 관측소 없음 → 앞서 간 차량 3대의 빙판 신호로 크라우드 감지 지점 생성 → 뒤차에 300m 전 경고와 주황 조명",
+  "steps": [
+    { "at": 0, "signal": { "gear": "DRIVE", "speedKmh": 60, "roadSpeedLimitKmh": 80, "wiper": "OFF", "outsideTempC": -3, "minuteOfDay": "05:40", "lowBeamOn": true } },
+    { "at": 0, "drive": { "from": [35.1637, 128.5600], "to": [35.1700, 128.5600], "speedKmh": 60 } },
+    { "at": 2000, "crowd": { "kind": "ICE", "lat": 35.1700, "lon": 128.5600, "count": 3 } },
+    { "at": 45000, "reset": true }
+  ]
+}

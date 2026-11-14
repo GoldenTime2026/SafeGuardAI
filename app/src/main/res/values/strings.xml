@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SafeGuard AI</string>
+    <string name="service_running">안전 코파일럿 동작 중</string>
+    <string name="crash_channel">사고 감지</string>
+    <string name="crash_title">사고가 감지됐어요</string>
+    <string name="crash_text">눌러서 119에 말할 위치와 대피 요령을 확인하세요</string>
+</resources>

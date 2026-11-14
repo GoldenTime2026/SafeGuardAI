@@ -1,0 +1,10 @@
+{
+  "description": "Gleo 음성 명령 시연용 주행 상태: 남해선 동쪽으로 주행 + 비(와이퍼) + 타이어 공기압 경고. 이 상태에서 '세이프가드, 나 졸려' / '앞에 낙하물 있어' / '브리핑해 줘'를 보냄(실차는 Gleo, 시연은 adb broadcast)",
+  "steps": [
+    { "at": 0, "signal": { "gear": "DRIVE", "speedKmh": 90, "roadSpeedLimitKmh": 100, "wiper": "LOW", "drivingMinutes": 75, "minuteOfDay": "14:30" } },
+    { "at": 0, "drive": { "from": [35.249324, 128.698500], "to": [35.249324, 128.740000], "speedKmh": 90 } },
+    { "at": 0, "telltale": { "TPMS": "ON" } },
+    { "at": 1000, "answer": "YES" },
+    { "at": 150000, "reset": true }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "description": "B-4: 등하교 시간 + 비 + 어린이 사고다발지역(실제 TAAS 2024: 창원시 성산구 반림동 반송중학교 부근) → 겹친 위험을 우선 안내(전방 위험급)하고 권장 속도 안내",
+  "steps": [
+    { "at": 0, "signal": { "gear": "DRIVE", "speedKmh": 35, "roadSpeedLimitKmh": 30, "wiper": "LOW", "minuteOfDay": "08:10" } },
+    { "at": 0, "drive": { "from": [35.2303, 128.6766], "to": [35.2357, 128.6766], "speedKmh": 35 } },
+    { "at": 50000, "reset": true }
+  ]
+}

@@ -1,0 +1,2034 @@
+{
+ "_meta": {
+  "source": "한국도로공사 전국졸음쉼터표준데이터 (공공데이터포털 15028203)",
+  "license": "이용허락범위 제한 없음",
+  "baseDate": "2026-02-25",
+  "count": 253
+ },
+ "points": [
+  {
+   "name": "오창",
+   "road": "중부선",
+   "direction": "통영기점 + 하남종점",
+   "lat": 36.734646,
+   "lon": 127.456615,
+   "toilet": true
+  },
+  {
+   "name": "봉양",
+   "road": "중앙선",
+   "direction": "부산기점 + 춘천종점",
+   "lat": 37.178504,
+   "lon": 128.128943,
+   "toilet": true
+  },
+  {
+   "name": "가남",
+   "road": "중부내륙선",
+   "direction": "양평기점 + 창원종점",
+   "lat": 37.169074,
+   "lon": 127.626537,
+   "toilet": true
+  },
+  {
+   "name": "앙성",
+   "road": "중부내륙선",
+   "direction": "창원기점 + 양평종점",
+   "lat": 37.099407,
+   "lon": 127.715727,
+   "toilet": true
+  },
+  {
+   "name": "노은",
+   "road": "중부내륙선",
+   "direction": "양평기점 + 창원종점",
+   "lat": 37.039839,
+   "lon": 127.770346,
+   "toilet": true
+  },
+  {
+   "name": "대소원",
+   "road": "중부내륙선",
+   "direction": "창원기점 + 양평종점",
+   "lat": 36.9744,
+   "lon": 127.847768,
+   "toilet": true
+  },
+  {
+   "name": "회인",
+   "road": "청주영덕선",
+   "direction": "영덕기점 + 청주종점",
+   "lat": 36.501794,
+   "lon": 127.59175,
+   "toilet": true
+  },
+  {
+   "name": "탄부",
+   "road": "청주영덕선",
+   "direction": "영덕기점 + 청주종점",
+   "lat": 36.454413,
+   "lon": 127.769757,
+   "toilet": true
+  },
+  {
+   "name": "탄부",
+   "road": "청주영덕선",
+   "direction": "청주기점 + 영덕종점",
+   "lat": 36.454413,
+   "lon": 127.769757,
+   "toilet": true
+  },
+  {
+   "name": "상주",
+   "road": "청주영덕선",
+   "direction": "영덕기점 + 청주종점",
+   "lat": 36.425756,
+   "lon": 128.044295,
+   "toilet": true
+  },
+  {
+   "name": "상주",
+   "road": "청주영덕선",
+   "direction": "청주기점 + 영덕종점",
+   "lat": 36.407458,
+   "lon": 128.069924,
+   "toilet": true
+  },
+  {
+   "name": "중앙탑",
+   "road": "평택제천선",
+   "direction": "제천기점 + 평택종점",
+   "lat": 37.041402,
+   "lon": 127.831891,
+   "toilet": true
+  },
+  {
+   "name": "중앙탑",
+   "road": "평택제천선",
+   "direction": "평택기점 + 제천종점",
+   "lat": 37.040719,
+   "lon": 127.83045,
+   "toilet": true
+  },
+  {
+   "name": "금성",
+   "road": "평택제천선",
+   "direction": "제천기점 + 평택종점",
+   "lat": 37.078167,
+   "lon": 128.150431,
+   "toilet": true
+  },
+  {
+   "name": "금성",
+   "road": "평택제천선",
+   "direction": "평택기점 + 제천종점",
+   "lat": 37.077848,
+   "lon": 128.150278,
+   "toilet": true
+  },
+  {
+   "name": "인제",
+   "road": "서울양양선",
+   "direction": "양양기점 + 서울종점",
+   "lat": 37.840931,
+   "lon": 128.233328,
+   "toilet": true
+  },
+  {
+   "name": "양양",
+   "road": "서울양양선",
+   "direction": "서울기점 + 양양종점",
+   "lat": 37.996229,
+   "lon": 128.534402,
+   "toilet": true
+  },
+  {
+   "name": "양양",
+   "road": "서울양양선",
+   "direction": "양양기점 + 서울종점",
+   "lat": 37.999567,
+   "lon": 128.536384,
+   "toilet": true
+  },
+  {
+   "name": "이천",
+   "road": "영동선",
+   "direction": "강릉기점 + 인천종점",
+   "lat": 37.242797,
+   "lon": 127.467063,
+   "toilet": true
+  },
+  {
+   "name": "이천",
+   "road": "영동선",
+   "direction": "인천기점 + 강릉종점",
+   "lat": 37.241769,
+   "lon": 127.465493,
+   "toilet": true
+  },
+  {
+   "name": "여주",
+   "road": "중부내륙선",
+   "direction": "창원기점 + 양평종점",
+   "lat": 37.342286,
+   "lon": 127.546418,
+   "toilet": true
+  },
+  {
+   "name": "여주",
+   "road": "중부내륙선",
+   "direction": "양평기점 + 창원종점",
+   "lat": 37.341661,
+   "lon": 127.54672,
+   "toilet": true
+  },
+  {
+   "name": "모가",
+   "road": "중부선",
+   "direction": "하남기점 + 통영종점",
+   "lat": 37.19659,
+   "lon": 127.443318,
+   "toilet": true
+  },
+  {
+   "name": "모가",
+   "road": "중부선",
+   "direction": "통영기점 + 하남종점",
+   "lat": 37.196856,
+   "lon": 127.443429,
+   "toilet": true
+  },
+  {
+   "name": "일죽",
+   "road": "중부선",
+   "direction": "하남기점 + 통영종점",
+   "lat": 37.084238,
+   "lon": 127.457009,
+   "toilet": true
+  },
+  {
+   "name": "일죽",
+   "road": "중부선",
+   "direction": "통영기점 + 하남종점",
+   "lat": 37.084238,
+   "lon": 127.457009,
+   "toilet": true
+  },
+  {
+   "name": "대소",
+   "road": "중부선",
+   "direction": "통영기점 + 하남종점",
+   "lat": 36.977074,
+   "lon": 127.469281,
+   "toilet": true
+  },
+  {
+   "name": "진천",
+   "road": "중부선",
+   "direction": "통영기점 + 하남종점",
+   "lat": 36.853611,
+   "lon": 127.486878,
+   "toilet": true
+  },
+  {
+   "name": "농다리",
+   "road": "중부선",
+   "direction": "하남기점 + 통영종점",
+   "lat": 36.834656,
+   "lon": 127.494039,
+   "toilet": true
+  },
+  {
+   "name": "오창",
+   "road": "중부선",
+   "direction": "하남기점 + 통영종점",
+   "lat": 36.7352,
+   "lon": 127.456313,
+   "toilet": true
+  },
+  {
+   "name": "삽교",
+   "road": "영동선",
+   "direction": "인천기점 + 강릉종점",
+   "lat": 37.522165,
+   "lon": 128.274327,
+   "toilet": true
+  },
+  {
+   "name": "월정",
+   "road": "영동선",
+   "direction": "강릉기점 + 인천종점",
+   "lat": 37.664725,
+   "lon": 128.593228,
+   "toilet": true
+  },
+  {
+   "name": "월정",
+   "road": "영동선",
+   "direction": "인천기점 + 강릉종점",
+   "lat": 37.663928,
+   "lon": 128.593233,
+   "toilet": true
+  },
+  {
+   "name": "대관령",
+   "road": "영동선",
+   "direction": "강릉기점 + 인천종점",
+   "lat": 37.675173,
+   "lon": 128.720216,
+   "toilet": true
+  },
+  {
+   "name": "대관령전망대",
+   "road": "영동선",
+   "direction": "인천기점 + 강릉종점",
+   "lat": 37.724009,
+   "lon": 128.779002,
+   "toilet": true
+  },
+  {
+   "name": "홍천강",
+   "road": "중앙선",
+   "direction": "춘천기점 + 부산종점",
+   "lat": 37.711753,
+   "lon": 127.827585,
+   "toilet": true
+  },
+  {
+   "name": "만종",
+   "road": "중앙선",
+   "direction": "춘천기점 + 부산종점",
+   "lat": 37.349582,
+   "lon": 127.908801,
+   "toilet": true
+  },
+  {
+   "name": "만종",
+   "road": "중앙선",
+   "direction": "부산기점 + 춘천종점",
+   "lat": 37.350147,
+   "lon": 127.90991,
+   "toilet": true
+  },
+  {
+   "name": "횡성",
+   "road": "중앙선",
+   "direction": "부산기점 + 춘천종점",
+   "lat": 37.573915,
+   "lon": 127.973639,
+   "toilet": true
+  },
+  {
+   "name": "횡성",
+   "road": "중앙선",
+   "direction": "춘천기점 + 부산종점",
+   "lat": 37.581118,
+   "lon": 127.974144,
+   "toilet": true
+  },
+  {
+   "name": "북방",
+   "road": "서울양양선",
+   "direction": "양양기점 + 서울종점",
+   "lat": 37.758101,
+   "lon": 127.880209,
+   "toilet": true
+  },
+  {
+   "name": "단봉",
+   "road": "동해선",
+   "direction": "속초기점 + 삼척종점",
+   "lat": 37.459715,
+   "lon": 129.107133,
+   "toilet": true
+  },
+  {
+   "name": "강현",
+   "road": "동해선",
+   "direction": "속초기점 + 삼척종점",
+   "lat": 38.118474,
+   "lon": 128.579583,
+   "toilet": true
+  },
+  {
+   "name": "강현",
+   "road": "동해선",
+   "direction": "삼척기점 + 속초종점",
+   "lat": 38.119539,
+   "lon": 128.579711,
+   "toilet": true
+  },
+  {
+   "name": "인제",
+   "road": "서울양양선",
+   "direction": "서울기점 + 양양종점",
+   "lat": 37.843475,
+   "lon": 128.235401,
+   "toilet": true
+  },
+  {
+   "name": "번천",
+   "road": "중부선",
+   "direction": "하남기점 + 통영종점",
+   "lat": 37.454462,
+   "lon": 127.254336,
+   "toilet": true
+  },
+  {
+   "name": "번천",
+   "road": "중부선",
+   "direction": "통영기점 + 하남종점",
+   "lat": 37.454462,
+   "lon": 127.254336,
+   "toilet": true
+  },
+  {
+   "name": "도척",
+   "road": "중부선",
+   "direction": "하남기점 + 통영종점",
+   "lat": 37.323327,
+   "lon": 127.338784,
+   "toilet": true
+  },
+  {
+   "name": "도척",
+   "road": "중부선",
+   "direction": "통영기점 + 하남종점",
+   "lat": 37.323327,
+   "lon": 127.338784,
+   "toilet": true
+  },
+  {
+   "name": "상번천",
+   "road": "제2중부선",
+   "direction": "하남기점 + 통영종점",
+   "lat": 37.448652,
+   "lon": 127.273677,
+   "toilet": true
+  },
+  {
+   "name": "상번천",
+   "road": "제2중부선",
+   "direction": "통영기점 + 하남종점",
+   "lat": 37.447871,
+   "lon": 127.275447,
+   "toilet": true
+  },
+  {
+   "name": "청계",
+   "road": "서울외곽선",
+   "direction": "판교기점 + 일산종점",
+   "lat": 37.39327,
+   "lon": 127.02231,
+   "toilet": true
+  },
+  {
+   "name": "성남",
+   "road": "서울외곽선",
+   "direction": "퇴계원기점 + 구리종점",
+   "lat": 37.441191,
+   "lon": 127.134719,
+   "toilet": true
+  },
+  {
+   "name": "구리남양주",
+   "road": "서울외곽선",
+   "direction": "판교기점 + 일산종점",
+   "lat": 37.589703,
+   "lon": 127.155902,
+   "toilet": true
+  },
+  {
+   "name": "생태습지",
+   "road": "영동선",
+   "direction": "인천기점 + 강릉종점",
+   "lat": 37.235266,
+   "lon": 127.603842,
+   "toilet": true
+  },
+  {
+   "name": "적금",
+   "road": "영동선",
+   "direction": "강릉기점 + 인천종점",
+   "lat": 37.252854,
+   "lon": 127.703654,
+   "toilet": true
+  },
+  {
+   "name": "적금",
+   "road": "영동선",
+   "direction": "인천기점 + 강릉종점",
+   "lat": 37.258857,
+   "lon": 127.7153,
+   "toilet": true
+  },
+  {
+   "name": "소초",
+   "road": "영동선",
+   "direction": "강릉기점 + 인천종점",
+   "lat": 37.420264,
+   "lon": 128.00195,
+   "toilet": true
+  },
+  {
+   "name": "소초",
+   "road": "영동선",
+   "direction": "인천기점 + 강릉종점",
+   "lat": 37.420264,
+   "lon": 128.00195,
+   "toilet": true
+  },
+  {
+   "name": "삽교",
+   "road": "영동선",
+   "direction": "강릉기점 + 인천종점",
+   "lat": 37.522933,
+   "lon": 128.275488,
+   "toilet": true
+  },
+  {
+   "name": "김포",
+   "road": "서울외곽선",
+   "direction": "판교기점 + 일산종점",
+   "lat": 37.592299,
+   "lon": 126.768356,
+   "toilet": true
+  },
+  {
+   "name": "김포",
+   "road": "서울외곽선",
+   "direction": "일산기점 + 판교종점",
+   "lat": 37.587002,
+   "lon": 126.760663,
+   "toilet": true
+  },
+  {
+   "name": "시흥",
+   "road": "서울외곽선",
+   "direction": "판교기점 + 일산종점",
+   "lat": 37.450713,
+   "lon": 126.803842,
+   "toilet": true
+  },
+  {
+   "name": "시흥",
+   "road": "서울외곽선",
+   "direction": "일산기점 + 판교종점",
+   "lat": 37.450481,
+   "lon": 126.803188,
+   "toilet": true
+  },
+  {
+   "name": "서서울",
+   "road": "서해안선",
+   "direction": "목포기점 + 서울종점",
+   "lat": 37.356643,
+   "lon": 126.864824,
+   "toilet": true
+  },
+  {
+   "name": "서서울",
+   "road": "서해안선",
+   "direction": "서울기점 + 목포종점",
+   "lat": 37.354933,
+   "lon": 126.861988,
+   "toilet": true
+  },
+  {
+   "name": "군자",
+   "road": "영동선",
+   "direction": "강릉기점 + 인천종점",
+   "lat": 37.358756,
+   "lon": 126.780781,
+   "toilet": true
+  },
+  {
+   "name": "이목",
+   "road": "영동선",
+   "direction": "인천기점 + 강릉종점",
+   "lat": 37.319551,
+   "lon": 126.985765,
+   "toilet": true
+  },
+  {
+   "name": "용인",
+   "road": "영동선",
+   "direction": "인천기점 + 강릉종점",
+   "lat": 37.288616,
+   "lon": 127.138727,
+   "toilet": true
+  },
+  {
+   "name": "향남",
+   "road": "서해안선",
+   "direction": "서울기점 + 목포종점",
+   "lat": 37.070121,
+   "lon": 126.888356,
+   "toilet": true
+  },
+  {
+   "name": "송탄",
+   "road": "평택제천선",
+   "direction": "제천기점 + 평택종점",
+   "lat": 37.030977,
+   "lon": 127.080325,
+   "toilet": true
+  },
+  {
+   "name": "송탄",
+   "road": "평택제천선",
+   "direction": "평택기점 + 제천종점",
+   "lat": 37.032321,
+   "lon": 127.081361,
+   "toilet": true
+  },
+  {
+   "name": "오산",
+   "road": "경부선",
+   "direction": "서울기점 + 부산종점",
+   "lat": 37.156708,
+   "lon": 127.087165,
+   "toilet": true
+  },
+  {
+   "name": "오산",
+   "road": "경부선",
+   "direction": "부산기점 + 서울종점",
+   "lat": 37.154266,
+   "lon": 127.086103,
+   "toilet": true
+  },
+  {
+   "name": "남사",
+   "road": "경부선",
+   "direction": "서울기점 + 부산종점",
+   "lat": 37.096192,
+   "lon": 127.120738,
+   "toilet": true
+  },
+  {
+   "name": "원곡",
+   "road": "경부선",
+   "direction": "부산기점 + 서울종점",
+   "lat": 37.001112,
+   "lon": 127.151971,
+   "toilet": true
+  },
+  {
+   "name": "광혜원",
+   "road": "평택제천선",
+   "direction": "제천기점 + 평택종점",
+   "lat": 36.95215,
+   "lon": 127.425872,
+   "toilet": true
+  },
+  {
+   "name": "문경",
+   "road": "중부내륙선",
+   "direction": "양평기점 + 창원종점",
+   "lat": 36.747011,
+   "lon": 128.061138,
+   "toilet": true
+  },
+  {
+   "name": "사벌",
+   "road": "중부내륙선",
+   "direction": "양평기점 + 창원종점",
+   "lat": 36.462887,
+   "lon": 128.200327,
+   "toilet": true
+  },
+  {
+   "name": "낙상",
+   "road": "중부내륙선",
+   "direction": "창원기점 + 양평종점",
+   "lat": 36.447565,
+   "lon": 128.205901,
+   "toilet": true
+  },
+  {
+   "name": "문경",
+   "road": "중부내륙선",
+   "direction": "창원기점 + 양평종점",
+   "lat": 36.717863,
+   "lon": 128.104187,
+   "toilet": true
+  },
+  {
+   "name": "연곡",
+   "road": "경부선",
+   "direction": "서울기점 + 부산종점",
+   "lat": 36.954311,
+   "lon": 127.183007,
+   "toilet": true
+  },
+  {
+   "name": "입장",
+   "road": "경부선",
+   "direction": "서울기점 + 부산종점",
+   "lat": 36.914432,
+   "lon": 127.188465,
+   "toilet": true
+  },
+  {
+   "name": "옥산",
+   "road": "경부선",
+   "direction": "부산기점 + 서울종점",
+   "lat": 36.655882,
+   "lon": 127.372294,
+   "toilet": true
+  },
+  {
+   "name": "신탄진",
+   "road": "경부선",
+   "direction": "서울기점 + 부산종점",
+   "lat": 36.425354,
+   "lon": 127.416697,
+   "toilet": true
+  },
+  {
+   "name": "서대전",
+   "road": "호남지선",
+   "direction": "회턱기점 + 논산종점",
+   "lat": 36.315694,
+   "lon": 127.306612,
+   "toilet": true
+  },
+  {
+   "name": "유성",
+   "road": "호남지선",
+   "direction": "논산기점 + 회덕종점",
+   "lat": 36.380886,
+   "lon": 127.335465,
+   "toilet": true
+  },
+  {
+   "name": "북대전",
+   "road": "호남지선",
+   "direction": "회덕기점 + 논산종점",
+   "lat": 36.406603,
+   "lon": 127.367566,
+   "toilet": true
+  },
+  {
+   "name": "북대전",
+   "road": "호남지선",
+   "direction": "논산기점 + 회덕종점",
+   "lat": 36.406172,
+   "lon": 127.36782,
+   "toilet": true
+  },
+  {
+   "name": "옥천",
+   "road": "경부선",
+   "direction": "서울기점 + 부산종점",
+   "lat": 36.328096,
+   "lon": 127.540893,
+   "toilet": true
+  },
+  {
+   "name": "옥천",
+   "road": "경부선",
+   "direction": "부산기점 + 서울종점",
+   "lat": 36.336247,
+   "lon": 127.528427,
+   "toilet": true
+  },
+  {
+   "name": "청성",
+   "road": "경부선",
+   "direction": "부산기점 + 서울종점",
+   "lat": 36.271712,
+   "lon": 127.740758,
+   "toilet": true
+  },
+  {
+   "name": "추풍령",
+   "road": "경부선",
+   "direction": "서울기점 + 부산종점",
+   "lat": 36.210623,
+   "lon": 127.988641,
+   "toilet": true
+  },
+  {
+   "name": "추풍령",
+   "road": "경부선",
+   "direction": "부산기점 + 서울종점",
+   "lat": 36.210985,
+   "lon": 127.988546,
+   "toilet": true
+  },
+  {
+   "name": "산내",
+   "road": "대전라남도부순환선",
+   "direction": "서대전기점 + 산내종점",
+   "lat": 36.280808,
+   "lon": 127.449556,
+   "toilet": true
+  },
+  {
+   "name": "당진",
+   "road": "서해안선",
+   "direction": "서울기점 + 목포종점",
+   "lat": 36.90075,
+   "lon": 126.718469,
+   "toilet": true
+  },
+  {
+   "name": "당진",
+   "road": "서해안선",
+   "direction": "목포기점 + 서울종점",
+   "lat": 36.90075,
+   "lon": 126.718469,
+   "toilet": true
+  },
+  {
+   "name": "용연",
+   "road": "서해안선",
+   "direction": "목포기점 + 서울종점",
+   "lat": 36.861234,
+   "lon": 126.645546,
+   "toilet": true
+  },
+  {
+   "name": "고북",
+   "road": "서해안선",
+   "direction": "서울기점 + 목포종점",
+   "lat": 36.651161,
+   "lon": 126.558312,
+   "toilet": true
+  },
+  {
+   "name": "갈산",
+   "road": "서해안선",
+   "direction": "목포기점 + 서울종점",
+   "lat": 36.634716,
+   "lon": 126.553128,
+   "toilet": true
+  },
+  {
+   "name": "서산",
+   "road": "서해안선",
+   "direction": "서울기점 + 목포종점",
+   "lat": 36.828862,
+   "lon": 126.588515,
+   "toilet": true
+  },
+  {
+   "name": "금남",
+   "road": "당진대전선",
+   "direction": "당진기점 + 대전종점",
+   "lat": 36.450628,
+   "lon": 127.254082,
+   "toilet": true
+  },
+  {
+   "name": "시초",
+   "road": "서천공주선",
+   "direction": "공주기점 + 서천종점",
+   "lat": 36.127714,
+   "lon": 126.766164,
+   "toilet": true
+  },
+  {
+   "name": "부여",
+   "road": "서천공주선",
+   "direction": "서천기점 + 공주종점",
+   "lat": 36.319451,
+   "lon": 126.874315,
+   "toilet": true
+  },
+  {
+   "name": "삼례",
+   "road": "호남선",
+   "direction": "천안기점 + 순천종점",
+   "lat": 35.902276,
+   "lon": 127.057549,
+   "toilet": true
+  },
+  {
+   "name": "삼례",
+   "road": "호남선",
+   "direction": "순천기점 + 천안종점",
+   "lat": 35.918136,
+   "lon": 127.070085,
+   "toilet": true
+  },
+  {
+   "name": "전주",
+   "road": "호남선",
+   "direction": "천안기점 + 순천종점",
+   "lat": 35.869564,
+   "lon": 127.051386,
+   "toilet": true
+  },
+  {
+   "name": "전주",
+   "road": "호남선",
+   "direction": "순천기점 + 천안종점",
+   "lat": 35.869478,
+   "lon": 127.051668,
+   "toilet": true
+  },
+  {
+   "name": "태인",
+   "road": "호남선",
+   "direction": "순천기점 + 천안종점",
+   "lat": 35.663506,
+   "lon": 126.93225,
+   "toilet": true
+  },
+  {
+   "name": "정우",
+   "road": "호남선",
+   "direction": "천안기점 + 순천종점",
+   "lat": 35.635362,
+   "lon": 126.900851,
+   "toilet": true
+  },
+  {
+   "name": "정우",
+   "road": "호남선",
+   "direction": "순천기점 + 천안종점",
+   "lat": 35.636292,
+   "lon": 126.902826,
+   "toilet": true
+  },
+  {
+   "name": "내장산",
+   "road": "호남선",
+   "direction": "천안기점 + 순천종점",
+   "lat": 35.495456,
+   "lon": 126.797915,
+   "toilet": true
+  },
+  {
+   "name": "내장산",
+   "road": "호남선",
+   "direction": "순천기점 + 천안종점",
+   "lat": 35.537523,
+   "lon": 126.813817,
+   "toilet": true
+  },
+  {
+   "name": "마이산",
+   "road": "익산장수선",
+   "direction": "장수기점 + 익산종점",
+   "lat": 35.770528,
+   "lon": 127.359072,
+   "toilet": true
+  },
+  {
+   "name": "마이산",
+   "road": "익산장수선",
+   "direction": "익산기점 + 장수종점",
+   "lat": 35.767636,
+   "lon": 127.362933,
+   "toilet": true
+  },
+  {
+   "name": "금산",
+   "road": "통영대전선",
+   "direction": "하남기점 + 통영종점",
+   "lat": 36.032435,
+   "lon": 127.572074,
+   "toilet": true
+  },
+  {
+   "name": "금산",
+   "road": "통영대전선",
+   "direction": "통영기점 + 하남종점",
+   "lat": 36.060778,
+   "lon": 127.551852,
+   "toilet": true
+  },
+  {
+   "name": "무주",
+   "road": "통영대전선",
+   "direction": "하남기점 + 통영종점",
+   "lat": 35.934713,
+   "lon": 127.659818,
+   "toilet": true
+  },
+  {
+   "name": "무주",
+   "road": "통영대전선",
+   "direction": "통영기점 + 하남종점",
+   "lat": 35.911465,
+   "lon": 127.666254,
+   "toilet": true
+  },
+  {
+   "name": "논산",
+   "road": "호남지선",
+   "direction": "회덕기점 + 논산종점",
+   "lat": 36.15955,
+   "lon": 127.175765,
+   "toilet": true
+  },
+  {
+   "name": "논산",
+   "road": "호남지선",
+   "direction": "논산기점 + 회덕종점",
+   "lat": 36.153446,
+   "lon": 127.164785,
+   "toilet": true
+  },
+  {
+   "name": "완주",
+   "road": "익산장수선",
+   "direction": "장수기점 + 익산종점",
+   "lat": 35.92803,
+   "lon": 127.101174,
+   "toilet": true
+  },
+  {
+   "name": "완주",
+   "road": "익산장수선",
+   "direction": "익산기점 + 장수종점",
+   "lat": 35.928358,
+   "lon": 127.100766,
+   "toilet": true
+  },
+  {
+   "name": "서김제",
+   "road": "서해안선",
+   "direction": "서울기점 + 목포종점",
+   "lat": 35.852942,
+   "lon": 126.842654,
+   "toilet": true
+  },
+  {
+   "name": "서김제",
+   "road": "서해안선",
+   "direction": "목포기점 + 서울종점",
+   "lat": 35.852575,
+   "lon": 126.842867,
+   "toilet": true
+  },
+  {
+   "name": "줄포",
+   "road": "서해안선",
+   "direction": "서울기점 + 목포종점",
+   "lat": 35.570434,
+   "lon": 126.694773,
+   "toilet": true
+  },
+  {
+   "name": "고창",
+   "road": "서해안선",
+   "direction": "서울기점 + 목포종점",
+   "lat": 35.377757,
+   "lon": 126.604047,
+   "toilet": true
+  },
+  {
+   "name": "광천",
+   "road": "서해안선",
+   "direction": "목포기점 + 서울종점",
+   "lat": 36.478635,
+   "lon": 126.587237,
+   "toilet": true
+  },
+  {
+   "name": "무창포",
+   "road": "서해안선",
+   "direction": "목포기점 + 서울종점",
+   "lat": 36.274923,
+   "lon": 126.579125,
+   "toilet": true
+  },
+  {
+   "name": "춘장대",
+   "road": "서해안선",
+   "direction": "서울기점 + 목포종점",
+   "lat": 36.18898,
+   "lon": 126.592958,
+   "toilet": true
+  },
+  {
+   "name": "춘장대",
+   "road": "서해안선",
+   "direction": "목포기점 + 서울종점",
+   "lat": 36.198937,
+   "lon": 126.588426,
+   "toilet": true
+  },
+  {
+   "name": "서천",
+   "road": "서해안선",
+   "direction": "서울기점 + 목포종점",
+   "lat": 36.068796,
+   "lon": 126.747055,
+   "toilet": true
+  },
+  {
+   "name": "서천",
+   "road": "서해안선",
+   "direction": "목포기점 + 서울종점",
+   "lat": 36.068796,
+   "lon": 126.747055,
+   "toilet": true
+  },
+  {
+   "name": "담양",
+   "road": "광주광역시대구선",
+   "direction": "광주광역시기점 + 대구종점",
+   "lat": 35.260944,
+   "lon": 126.971169,
+   "toilet": true
+  },
+  {
+   "name": "장성",
+   "road": "호남선",
+   "direction": "천안기점 + 순천종점",
+   "lat": 35.315455,
+   "lon": 126.793558,
+   "toilet": true
+  },
+  {
+   "name": "장성",
+   "road": "호남선",
+   "direction": "순천기점 + 천안종점",
+   "lat": 35.31689,
+   "lon": 126.793977,
+   "toilet": true
+  },
+  {
+   "name": "대덕",
+   "road": "호남선",
+   "direction": "순천기점 + 천안종점",
+   "lat": 35.245064,
+   "lon": 127.02583,
+   "toilet": true
+  },
+  {
+   "name": "삼기",
+   "road": "호남선",
+   "direction": "순천기점 + 천안종점",
+   "lat": 35.234049,
+   "lon": 127.20417,
+   "toilet": true
+  },
+  {
+   "name": "삼기",
+   "road": "호남선",
+   "direction": "천안기점 + 순천종점",
+   "lat": 35.233839,
+   "lon": 127.204181,
+   "toilet": true
+  },
+  {
+   "name": "장성물류",
+   "road": "고창담양선",
+   "direction": "담양기점 + 고창종점",
+   "lat": 35.347596,
+   "lon": 126.778012,
+   "toilet": true
+  },
+  {
+   "name": "장성물류",
+   "road": "고창담양선",
+   "direction": "고창기점 + 담양종점",
+   "lat": 35.347252,
+   "lon": 126.777796,
+   "toilet": true
+  },
+  {
+   "name": "태령",
+   "road": "고창담양선",
+   "direction": "담양기점 + 고창종점",
+   "lat": 35.248834,
+   "lon": 126.928347,
+   "toilet": true
+  },
+  {
+   "name": "태령",
+   "road": "고창담양선",
+   "direction": "고창기점 + 담양종점",
+   "lat": 35.248834,
+   "lon": 126.928347,
+   "toilet": true
+  },
+  {
+   "name": "주암",
+   "road": "호남선",
+   "direction": "순천기점 + 천안종점",
+   "lat": 35.055935,
+   "lon": 127.277355,
+   "toilet": true
+  },
+  {
+   "name": "주암",
+   "road": "호남선",
+   "direction": "천안기점 + 순천종점",
+   "lat": 35.055935,
+   "lon": 127.277355,
+   "toilet": true
+  },
+  {
+   "name": "순천",
+   "road": "남해선",
+   "direction": "부산기점 + 순천종점",
+   "lat": 34.996063,
+   "lon": 127.493699,
+   "toilet": true
+  },
+  {
+   "name": "광양",
+   "road": "남해선",
+   "direction": "부산기점 + 순천종점",
+   "lat": 34.984026,
+   "lon": 127.589147,
+   "toilet": true
+  },
+  {
+   "name": "광양",
+   "road": "남해선",
+   "direction": "순천기점 + 부산종점",
+   "lat": 34.984026,
+   "lon": 127.589147,
+   "toilet": true
+  },
+  {
+   "name": "영광",
+   "road": "서해안선",
+   "direction": "목포기점 + 서울종점",
+   "lat": 35.249456,
+   "lon": 126.518972,
+   "toilet": true
+  },
+  {
+   "name": "진주",
+   "road": "통영대전선",
+   "direction": "통영기점 + 하남종점",
+   "lat": 35.197443,
+   "lon": 128.029189,
+   "toilet": true
+  },
+  {
+   "name": "진주",
+   "road": "통영대전선",
+   "direction": "하남기점 + 통영종점",
+   "lat": 35.196979,
+   "lon": 128.029532,
+   "toilet": true
+  },
+  {
+   "name": "울산",
+   "road": "울산선",
+   "direction": "울산기점 + 언양종점",
+   "lat": 35.550442,
+   "lon": 129.167529,
+   "toilet": true
+  },
+  {
+   "name": "울산",
+   "road": "울산선",
+   "direction": "언양기점 + 울산종점",
+   "lat": 35.550077,
+   "lon": 129.167603,
+   "toilet": true
+  },
+  {
+   "name": "현풍",
+   "road": "중부내륙선",
+   "direction": "양평기점 + 창원종점",
+   "lat": 35.666717,
+   "lon": 128.435925,
+   "toilet": true
+  },
+  {
+   "name": "창녕",
+   "road": "중부내륙선",
+   "direction": "창원기점 + 양평종점",
+   "lat": 35.530879,
+   "lon": 128.488572,
+   "toilet": true
+  },
+  {
+   "name": "창녕",
+   "road": "중부내륙선",
+   "direction": "양평기점 + 창원종점",
+   "lat": 35.544935,
+   "lon": 128.475746,
+   "toilet": true
+  },
+  {
+   "name": "금곡",
+   "road": "통영대전선",
+   "direction": "하남기점 + 통영종점",
+   "lat": 35.09473,
+   "lon": 128.164291,
+   "toilet": true
+  },
+  {
+   "name": "금곡",
+   "road": "통영대전선",
+   "direction": "통영기점 + 하남종점",
+   "lat": 35.094952,
+   "lon": 128.164466,
+   "toilet": true
+  },
+  {
+   "name": "고성",
+   "road": "통영대전선",
+   "direction": "하남기점 + 통영종점",
+   "lat": 34.981754,
+   "lon": 128.373516,
+   "toilet": true
+  },
+  {
+   "name": "고성",
+   "road": "통영대전선",
+   "direction": "통영기점 + 하남종점",
+   "lat": 34.981754,
+   "lon": 128.373516,
+   "toilet": true
+  },
+  {
+   "name": "내남",
+   "road": "경부선",
+   "direction": "부산기점 + 서울종점",
+   "lat": 35.752259,
+   "lon": 129.194721,
+   "toilet": true
+  },
+  {
+   "name": "언양",
+   "road": "경부선",
+   "direction": "서울기점 + 부산종점",
+   "lat": 35.59837,
+   "lon": 129.140183,
+   "toilet": true
+  },
+  {
+   "name": "삼남",
+   "road": "경부선",
+   "direction": "부산기점 + 서울종점",
+   "lat": 35.545332,
+   "lon": 129.118872,
+   "toilet": true
+  },
+  {
+   "name": "양산",
+   "road": "경부선",
+   "direction": "서울기점 + 부산종점",
+   "lat": 35.34313,
+   "lon": 129.042803,
+   "toilet": true
+  },
+  {
+   "name": "양산",
+   "road": "경부선",
+   "direction": "부산기점 + 서울종점",
+   "lat": 35.342356,
+   "lon": 129.042148,
+   "toilet": true
+  },
+  {
+   "name": "김해",
+   "road": "남해선",
+   "direction": "순천기점 + 부산종점",
+   "lat": 35.220854,
+   "lon": 128.870291,
+   "toilet": true
+  },
+  {
+   "name": "북창원",
+   "road": "남해선",
+   "direction": "순천기점 + 부산종점",
+   "lat": 35.283148,
+   "lon": 128.617202,
+   "toilet": true
+  },
+  {
+   "name": "진례",
+   "road": "남해선",
+   "direction": "순천기점 + 부산종점",
+   "lat": 35.249324,
+   "lon": 128.758979,
+   "toilet": true
+  },
+  {
+   "name": "진례",
+   "road": "남해선",
+   "direction": "부산기점 + 순천종점",
+   "lat": 35.245286,
+   "lon": 128.760301,
+   "toilet": true
+  },
+  {
+   "name": "창원",
+   "road": "남해1지선",
+   "direction": "창원기점 + 산인종점",
+   "lat": 35.263315,
+   "lon": 128.61201,
+   "toilet": true
+  },
+  {
+   "name": "창원",
+   "road": "남해1지선",
+   "direction": "산인기점 + 창원종점",
+   "lat": 35.263315,
+   "lon": 128.61201,
+   "toilet": true
+  },
+  {
+   "name": "곤양",
+   "road": "남해선",
+   "direction": "부산기점 + 순천종점",
+   "lat": 35.05317,
+   "lon": 127.944696,
+   "toilet": true
+  },
+  {
+   "name": "곤양",
+   "road": "남해선",
+   "direction": "순천기점 + 부산종점",
+   "lat": 35.05317,
+   "lon": 127.944696,
+   "toilet": true
+  },
+  {
+   "name": "지수",
+   "road": "남해선",
+   "direction": "부산기점 + 순천종점",
+   "lat": 35.206597,
+   "lon": 128.253706,
+   "toilet": true
+  },
+  {
+   "name": "지수",
+   "road": "남해선",
+   "direction": "순천기점 + 부산종점",
+   "lat": 35.207996,
+   "lon": 128.258237,
+   "toilet": true
+  },
+  {
+   "name": "서상",
+   "road": "통영대전선",
+   "direction": "하남기점 + 통영종점",
+   "lat": 35.635279,
+   "lon": 127.708836,
+   "toilet": true
+  },
+  {
+   "name": "서상",
+   "road": "통영대전선",
+   "direction": "통영기점 + 하남종점",
+   "lat": 35.633503,
+   "lon": 127.713907,
+   "toilet": true
+  },
+  {
+   "name": "수동",
+   "road": "통영대전선",
+   "direction": "하남기점 + 통영종점",
+   "lat": 35.517246,
+   "lon": 127.796233,
+   "toilet": true
+  },
+  {
+   "name": "수동",
+   "road": "통영대전선",
+   "direction": "통영기점 + 하남종점",
+   "lat": 35.517246,
+   "lon": 127.796233,
+   "toilet": true
+  },
+  {
+   "name": "금서",
+   "road": "통영대전선",
+   "direction": "하남기점 + 통영종점",
+   "lat": 35.440322,
+   "lon": 127.853235,
+   "toilet": true
+  },
+  {
+   "name": "금서",
+   "road": "통영대전선",
+   "direction": "통영기점 + 하남종점",
+   "lat": 35.438379,
+   "lon": 127.854783,
+   "toilet": true
+  },
+  {
+   "name": "보문",
+   "road": "중앙선",
+   "direction": "부산기점 + 춘천종점",
+   "lat": 36.689789,
+   "lon": 128.554036,
+   "toilet": true
+  },
+  {
+   "name": "풍산",
+   "road": "중앙선",
+   "direction": "춘천기점 + 부산종점",
+   "lat": 36.603154,
+   "lon": 128.58416,
+   "toilet": true
+  },
+  {
+   "name": "죽령",
+   "road": "중앙선",
+   "direction": "춘천기점 + 부산종점",
+   "lat": 36.913506,
+   "lon": 128.397701,
+   "toilet": true
+  },
+  {
+   "name": "죽령",
+   "road": "중앙선",
+   "direction": "부산기점 + 춘천종점",
+   "lat": 36.91372,
+   "lon": 128.396901,
+   "toilet": true
+  },
+  {
+   "name": "아포",
+   "road": "중부내륙선",
+   "direction": "양평기점 + 창원종점",
+   "lat": 36.198077,
+   "lon": 128.2591,
+   "toilet": true
+  },
+  {
+   "name": "선산",
+   "road": "중부내륙선",
+   "direction": "창원기점 + 양평종점",
+   "lat": 36.213099,
+   "lon": 128.262129,
+   "toilet": true
+  },
+  {
+   "name": "오봉",
+   "road": "중부내륙선",
+   "direction": "양기점 + 창원종점",
+   "lat": 36.092614,
+   "lon": 128.261663,
+   "toilet": true
+  },
+  {
+   "name": "개진",
+   "road": "중부내륙선",
+   "direction": "창원기점 + 양평종점",
+   "lat": 35.704149,
+   "lon": 128.417746,
+   "toilet": true
+  },
+  {
+   "name": "삼춘",
+   "road": "청주영덕선",
+   "direction": "청주기점 + 영덕종점",
+   "lat": 36.421027,
+   "lon": 128.576998,
+   "toilet": true
+  },
+  {
+   "name": "하화",
+   "road": "청주영덕선",
+   "direction": "영덕기점 + 청주종점",
+   "lat": 36.418827,
+   "lon": 128.699326,
+   "toilet": true
+  },
+  {
+   "name": "묵계",
+   "road": "청주영덕선",
+   "direction": "청주기점 + 영덕종점",
+   "lat": 36.437862,
+   "lon": 128.928792,
+   "toilet": true
+  },
+  {
+   "name": "지품",
+   "road": "청주영덕선",
+   "direction": "영덕기점 + 청주종점",
+   "lat": 36.480948,
+   "lon": 129.17473,
+   "toilet": true
+  },
+  {
+   "name": "수암",
+   "road": "청주영덕선",
+   "direction": "청주기점 + 영덕종점",
+   "lat": 36.461596,
+   "lon": 129.21077,
+   "toilet": true
+  },
+  {
+   "name": "일광",
+   "road": "부산외곽순환선",
+   "direction": "창원기점 + 기장종점",
+   "lat": 35.292339,
+   "lon": 129.206194,
+   "toilet": true
+  },
+  {
+   "name": "일광",
+   "road": "부산외곽순환선",
+   "direction": "기장기점 + 창원종점",
+   "lat": 35.292339,
+   "lon": 129.206194,
+   "toilet": true
+  },
+  {
+   "name": "김해",
+   "road": "남해선",
+   "direction": "부산기점 + 순천종점",
+   "lat": 35.220854,
+   "lon": 128.870291,
+   "toilet": true
+  },
+  {
+   "name": "북안",
+   "road": "경부선",
+   "direction": "서울기점 + 부산종점",
+   "lat": 35.924622,
+   "lon": 128.998012,
+   "toilet": true
+  },
+  {
+   "name": "북안",
+   "road": "경부선",
+   "direction": "부산기점 + 서울종점",
+   "lat": 35.92463,
+   "lon": 128.999844,
+   "toilet": true
+  },
+  {
+   "name": "칠곡",
+   "road": "대구외곽순환선",
+   "direction": "동대구기점 + 달서종점",
+   "lat": 35.904914,
+   "lon": 128.479486,
+   "toilet": true
+  },
+  {
+   "name": "칠곡",
+   "road": "대구외곽순환선",
+   "direction": "달서기점 + 동대구종점",
+   "lat": 35.910297,
+   "lon": 128.504056,
+   "toilet": true
+  },
+  {
+   "name": "봉무",
+   "road": "대구외곽순환선",
+   "direction": "동대구기점 + 달서종점",
+   "lat": 35.932594,
+   "lon": 128.651089,
+   "toilet": true
+  },
+  {
+   "name": "봉무",
+   "road": "대구외곽순환선",
+   "direction": "달서기점 + 동대구종점",
+   "lat": 35.931482,
+   "lon": 128.652543,
+   "toilet": true
+  },
+  {
+   "name": "안평",
+   "road": "중앙선",
+   "direction": "춘천기점 + 부산종점",
+   "lat": 36.379764,
+   "lon": 128.577111,
+   "toilet": true
+  },
+  {
+   "name": "안평",
+   "road": "중앙선",
+   "direction": "부산기점 + 춘천종점",
+   "lat": 36.379031,
+   "lon": 128.577479,
+   "toilet": true
+  },
+  {
+   "name": "명곡",
+   "road": "중앙선",
+   "direction": "춘천기점 + 부산종점",
+   "lat": 36.125654,
+   "lon": 128.541097,
+   "toilet": true
+  },
+  {
+   "name": "명곡",
+   "road": "중앙선",
+   "direction": "부산기점 + 춘천종점",
+   "lat": 36.125608,
+   "lon": 128.541782,
+   "toilet": true
+  },
+  {
+   "name": "읍내",
+   "road": "중앙선",
+   "direction": "부산기점 + 춘천종점",
+   "lat": 35.94842,
+   "lon": 128.547666,
+   "toilet": true
+  },
+  {
+   "name": "화산",
+   "road": "대구포항선",
+   "direction": "대구기점 + 포항종점",
+   "lat": 36.017066,
+   "lon": 128.8855,
+   "toilet": true
+  },
+  {
+   "name": "남상",
+   "road": "광주광역시대구선",
+   "direction": "대구기점 + 광주광역시종점",
+   "lat": 35.611234,
+   "lon": 127.881546,
+   "toilet": true
+  },
+  {
+   "name": "남상",
+   "road": "광주광역시대구선",
+   "direction": "광주광역시기점 + 대구종점",
+   "lat": 35.636051,
+   "lon": 127.906245,
+   "toilet": true
+  },
+  {
+   "name": "쌍림",
+   "road": "광주광역시대구선",
+   "direction": "대구기점 + 광주광역시종점",
+   "lat": 35.700644,
+   "lon": 128.233885,
+   "toilet": true
+  },
+  {
+   "name": "고령",
+   "road": "광주광역시대구선",
+   "direction": "광주광역시기점 + 대구종점",
+   "lat": 35.722402,
+   "lon": 128.297348,
+   "toilet": true
+  },
+  {
+   "name": "몽탄",
+   "road": "서해안선",
+   "direction": "서울기점 + 목포종점",
+   "lat": 34.952575,
+   "lon": 126.503821,
+   "toilet": true
+  },
+  {
+   "name": "몽탄",
+   "road": "서해안선",
+   "direction": "목포기점 + 서울종점",
+   "lat": 34.945768,
+   "lon": 126.504596,
+   "toilet": true
+  },
+  {
+   "name": "벌교",
+   "road": "남해선(영암순천)",
+   "direction": "순천기점 + 영암종점",
+   "lat": 34.823812,
+   "lon": 127.381603,
+   "toilet": true
+  },
+  {
+   "name": "강진",
+   "road": "남해선(영암순천)",
+   "direction": "영암기점 + 순천종점",
+   "lat": 34.686562,
+   "lon": 126.774024,
+   "toilet": true
+  },
+  {
+   "name": "강진",
+   "road": "남해선(영암순천)",
+   "direction": "순천기점 + 영암종점",
+   "lat": 34.694235,
+   "lon": 126.755097,
+   "toilet": true
+  },
+  {
+   "name": "대강",
+   "road": "광주대구선",
+   "direction": "대구기점 + 광주광역시종점",
+   "lat": 35.385273,
+   "lon": 127.234343,
+   "toilet": true
+  },
+  {
+   "name": "봉산",
+   "road": "경부선",
+   "direction": "서울기점 + 부산종점",
+   "lat": 36.156432,
+   "lon": 128.02568,
+   "toilet": true
+  },
+  {
+   "name": "봉산",
+   "road": "경부선",
+   "direction": "부산기점 + 서울종점",
+   "lat": 36.156517,
+   "lon": 128.02649,
+   "toilet": true
+  },
+  {
+   "name": "대신",
+   "road": "경부선",
+   "direction": "서울기점 + 부산종점",
+   "lat": 36.152511,
+   "lon": 128.191239,
+   "toilet": true
+  },
+  {
+   "name": "대신",
+   "road": "경부선",
+   "direction": "부산기점 + 서울종점",
+   "lat": 36.152819,
+   "lon": 128.190756,
+   "toilet": true
+  },
+  {
+   "name": "선기",
+   "road": "경부선",
+   "direction": "서울기점 + 부산종점",
+   "lat": 36.136307,
+   "lon": 128.316179,
+   "toilet": true
+  },
+  {
+   "name": "선기",
+   "road": "경부선",
+   "direction": "부산기점 + 서울종점",
+   "lat": 36.136271,
+   "lon": 128.3165,
+   "toilet": true
+  },
+  {
+   "name": "석적",
+   "road": "경부선",
+   "direction": "부산기점 + 서울종점",
+   "lat": 36.051633,
+   "lon": 128.408056,
+   "toilet": true
+  },
+  {
+   "name": "지천",
+   "road": "경부선",
+   "direction": "서울기점 + 부산종점",
+   "lat": 35.922121,
+   "lon": 128.484474,
+   "toilet": true
+  },
+  {
+   "name": "검단",
+   "road": "경부선",
+   "direction": "서울기점 + 부산종점",
+   "lat": 35.914918,
+   "lon": 128.613472,
+   "toilet": true
+  },
+  {
+   "name": "검단",
+   "road": "경부선",
+   "direction": "부산기점 + 서울종점",
+   "lat": 35.915739,
+   "lon": 128.614451,
+   "toilet": true
+  },
+  {
+   "name": "동산",
+   "road": "서울양양선",
+   "direction": "서울기점 + 양앙종점",
+   "lat": 37.755496,
+   "lon": 127.734939,
+   "toilet": true
+  },
+  {
+   "name": "화도",
+   "road": "서울양양선",
+   "direction": "서울기점 + 양앙종점",
+   "lat": 37.631118,
+   "lon": 127.296425,
+   "toilet": true
+  },
+  {
+   "name": "화도",
+   "road": "서울양양선",
+   "direction": "양양기점 + 서울종점",
+   "lat": 37.632074,
+   "lon": 127.298592,
+   "toilet": true
+  },
+  {
+   "name": "남산",
+   "road": "서울양양선",
+   "direction": "양양기점 + 서울종점",
+   "lat": 37.741708,
+   "lon": 127.672173,
+   "toilet": true
+  },
+  {
+   "name": "손양",
+   "road": "동해선",
+   "direction": "삼척기점 + 속초종점",
+   "lat": 38.042784,
+   "lon": 128.657106,
+   "toilet": true
+  },
+  {
+   "name": "동광주",
+   "road": "호남선",
+   "direction": "순천기점 + 천안종점",
+   "lat": 35.208551,
+   "lon": 126.93939,
+   "toilet": true
+  },
+  {
+   "name": "함양",
+   "road": "광주대구선",
+   "direction": "대구기점 + 광주광역시종점",
+   "lat": 35.543443,
+   "lon": 127.69929,
+   "toilet": true
+  },
+  {
+   "name": "하빈",
+   "road": "경부선",
+   "direction": "서울기점 + 부산종점",
+   "lat": 35.932336,
+   "lon": 128.474457,
+   "toilet": true
+  },
+  {
+   "name": "남정",
+   "road": "포항영덕선",
+   "direction": "영덕기점 + 포항종점",
+   "lat": 36.34806,
+   "lon": 129.357611,
+   "toilet": true
+  },
+  {
+   "name": "남정",
+   "road": "포항영덕선",
+   "direction": "포항기점 + 영덕종점",
+   "lat": 36.347541,
+   "lon": 129.358445,
+   "toilet": true
+  },
+  {
+   "name": "흥해",
+   "road": "포항영덕선",
+   "direction": "영덕기점 + 포항종점",
+   "lat": 36.133756,
+   "lon": 129.380605,
+   "toilet": true
+  },
+  {
+   "name": "흥해",
+   "road": "포항영덕선",
+   "direction": "포항기점 + 영덕종점",
+   "lat": 36.132641,
+   "lon": 129.381515,
+   "toilet": true
+  },
+  {
+   "name": "배방",
+   "road": "당진청주선",
+   "direction": "청주기점 + 당진종점",
+   "lat": 36.771497,
+   "lon": 127.093206,
+   "toilet": true
+  },
+  {
+   "name": "배방",
+   "road": "당진청주선",
+   "direction": "당진기점 + 청주종점",
+   "lat": 36.771618,
+   "lon": 127.091578,
+   "toilet": true
+  },
+  {
+   "name": "진봉",
+   "road": "새만금전주",
+   "direction": "장수기점 + 새만금종점",
+   "lat": 35.852717,
+   "lon": 126.780756,
+   "toilet": true
+  },
+  {
+   "name": "진봉",
+   "road": "새만금전주",
+   "direction": "새만금기점 + 장수종점",
+   "lat": 35.853632,
+   "lon": 126.77579,
+   "toilet": true
+  },
+  {
+   "name": "광혜원",
+   "road": "평택제천선",
+   "direction": "평택기점 + 제천종점",
+   "lat": 36.954353,
+   "lon": 127.416561,
+   "toilet": true
+  },
+  {
+   "name": "수한",
+   "road": "청주영덕선",
+   "direction": "청주기점 + 영덕종점",
+   "lat": 36.472968,
+   "lon": 127.657446,
+   "toilet": true
+  },
+  {
+   "name": "양지",
+   "road": "세종포천선",
+   "direction": "포천기점 + 세종종점",
+   "lat": 37.241176,
+   "lon": 127.250995,
+   "toilet": true
+  },
+  {
+   "name": "양지",
+   "road": "세종포천선",
+   "direction": "세종기점 + 포천종점",
+   "lat": 37.242072,
+   "lon": 127.251754,
+   "toilet": true
+  },
+  {
+   "name": "서양주",
+   "road": "수도권제2순환선",
+   "direction": "양주기점 + 파주종점",
+   "lat": 37.849137,
+   "lon": 126.9971,
+   "toilet": true
+  },
+  {
+   "name": "서양주",
+   "road": "수도권제2순환선",
+   "direction": "파주기점 + 양주종점",
+   "lat": 37.848519,
+   "lon": 126.998062,
+   "toilet": true
+  },
+  {
+   "name": "소흘",
+   "road": "구리포천선",
+   "direction": "구리기점 + 포천종점",
+   "lat": 37.829022,
+   "lon": 127.159791,
+   "toilet": true
+  },
+  {
+   "name": "소흘",
+   "road": "구리포천선",
+   "direction": "포천기점 + 구리종점",
+   "lat": 37.827983,
+   "lon": 127.159193,
+   "toilet": true
+  }
+ ]
+}

@@ -1,0 +1,17 @@
+{
+  "description": "④ 졸음 케어: 2시간 5분 연속 주행 → 휴식 권유(실제 졸음쉼터 데이터: 남해선 진례) → 차량 졸음경고 → 각성 프로그램 → 계속 졸림 → 졸음쉼터 경유지 제안(응) → 쉼터 도착·정차 → 파워냅 제안(응) → 20초 뒤 깨움(시연용 단축, 실제 15분)",
+  "steps": [
+    { "at": 0, "napSeconds": 20 },
+    { "at": 0, "signal": { "gear": "DRIVE", "speedKmh": 100, "roadSpeedLimitKmh": 100, "minuteOfDay": "14:30" } },
+    { "at": 0, "drive": { "from": [35.249324, 128.698500], "to": [35.249324, 128.726000], "speedKmh": 100 } },
+    { "at": 1500, "signal": { "drivingMinutes": 125 } },
+    { "at": 15000, "telltale": { "DRIVER_ATTENTION": "ON" } },
+    { "at": 40000, "answer": "YES" },
+    { "at": 41000, "escalateDrowsy": true },
+    { "at": 70000, "telltale": {} },
+    { "at": 94000, "answer": "YES" },
+    { "at": 95000, "arrive": "진례 졸음쉼터" },
+    { "at": 95000, "signal": { "gear": "PARK", "speedKmh": 0, "latitude": 35.249324, "longitude": 128.758979 } },
+    { "at": 140000, "reset": true }
+  ]
+}

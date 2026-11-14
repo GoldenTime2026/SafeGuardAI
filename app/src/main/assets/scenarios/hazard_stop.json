@@ -1,0 +1,10 @@
+{
+  "description": "⑥ 확장 · 에어백 미전개 비상 정차(순정 서비스 공백): 남해선 100km/h 주행 → 후방 추돌·고장으로 감속 후 정차, 비상등 → 뒤차에 정차 차량 공유 → 30초 유지 → '2차 사고가 가장 위험해요' 대피 안내 + 신고 위치·긴급견인 번호 화면 → '보호자에게 위치를 알릴까요?' → '응' → 보호자 문자",
+  "steps": [
+    { "at": 0, "signal": { "gear": "DRIVE", "speedKmh": 100, "roadSpeedLimitKmh": 100, "latitude": 35.249324, "longitude": 128.703760, "headingDeg": 90 } },
+    { "at": 6000, "signal": { "speedKmh": 40 } },
+    { "at": 9000, "signal": { "speedKmh": 0, "hazardOn": true } },
+    { "at": 36000, "answer": "YES" },
+    { "at": 80000, "reset": true }
+  ]
+}

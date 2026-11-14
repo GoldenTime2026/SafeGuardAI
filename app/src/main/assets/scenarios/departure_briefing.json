@@ -1,0 +1,8 @@
+{
+  "description": "C-2: 출발 브리핑 — 비 오는 아침, 워셔액 부족, 주변 주의 지점이 있는 상태에서 시동",
+  "steps": [
+    { "at": 0, "signal": { "gear": "PARK", "speedKmh": 0, "wiper": "LOW", "washerFluidLow": true, "latitude": 35.2300, "longitude": 128.6760 } },
+    { "at": 500, "briefing": true },
+    { "at": 25000, "reset": true }
+  ]
+}

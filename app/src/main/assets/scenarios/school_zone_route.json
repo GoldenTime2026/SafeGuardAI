@@ -1,0 +1,10 @@
+{
+  "description": "등하교 시간 스쿨존 회피 경로: 평일 08:10 길안내 중 1.2km 앞 경로에 어린이보호구역 → '피해 가는 길로 바꿀까요?' → (응) 내비 경로 옵션을 어린이보호구역 회피로 변경",
+  "steps": [
+    { "at": 0, "answer": "YES" },
+    { "at": 0, "signal": { "gear": "DRIVE", "roadSpeedLimitKmh": 50, "minuteOfDay": "08:10", "cautions": [ { "type": "SCHOOL_ZONE", "remainMeters": 1200 } ] } },
+    { "at": 0, "drive": { "from": [35.2270, 128.6720], "to": [35.2370, 128.6720], "speedKmh": 40 } },
+    { "at": 1000, "traffic": { "routing": true, "congestions": [], "incidents": [] } },
+    { "at": 30000, "reset": true }
+  ]
+}

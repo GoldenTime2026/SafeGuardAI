@@ -1,0 +1,17 @@
+{
+  "description": "제시간 코치 (시연): 16:00 인천국제공항 제1여객터미널로 길안내 중(남은 50분·55km) → '공항으로 가시네요. 몇 시 비행기예요?' → '대한항공 705' → 운항 데이터(2026-10-30 인천국제공항공사 실제 응답 기록: KE705 나리타행 18:55 → 19:16, 제2여객터미널) → '21분 늦어져 오후 7시 16분 출발, 목적지가 다른 터미널, 출국장 붐비는 시간이라 10분 더, 수속 마감 56분 전 도착' → 과속 시 '속도를 줄여도 늦지 않아요' → 정체로 남은 95분 → 빠듯 → 115분 → 늦음과 과속 이득. 실시간 데이터로 확인하려면 airport_live",
+  "steps": [
+    { "at": 0, "reply": "대한항공 705" },
+    { "at": 0, "flight": { "airport": "ICN", "candidates": 1, "busy": true, "parking": [],
+        "flight": { "flightId": "KE705", "airline": "대한항공", "dest": "도쿄/나리타", "scheduled": "1855", "estimated": "1916", "delayMin": 21,
+                    "status": "", "cancelled": false, "line": "I", "gate": "251", "terminal": "T2", "counters": "A B C D" } } },
+    { "at": 0, "signal": { "gear": "DRIVE", "speedKmh": 95, "roadSpeedLimitKmh": 100, "minuteOfDay": "16:00" } },
+    { "at": 0, "drive": { "from": [37.4600, 126.7000], "to": [37.4600, 126.5000], "speedKmh": 95 } },
+    { "at": 1000, "ahead": [{ "name": "인천국제공항 제1여객터미널", "address": "인천광역시 중구 공항로 272", "remainMin": 50, "remainKm": 55 }] },
+    { "at": 35000, "drive": { "from": [37.4600, 126.6500], "to": [37.4600, 126.4000], "speedKmh": 125 } },
+    { "at": 55000, "drive": { "from": [37.4600, 126.6000], "to": [37.4600, 126.4000], "speedKmh": 90 } },
+    { "at": 62000, "ahead": [{ "name": "인천국제공항 제1여객터미널", "address": "인천광역시 중구 공항로 272", "remainMin": 95, "remainKm": 50 }] },
+    { "at": 85000, "ahead": [{ "name": "인천국제공항 제1여객터미널", "address": "인천광역시 중구 공항로 272", "remainMin": 115, "remainKm": 48 }] },
+    { "at": 115000, "reset": true }
+  ]
+}

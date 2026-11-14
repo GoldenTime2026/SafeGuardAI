@@ -1,0 +1,53 @@
+{
+  "packageName": "com.safeguard.ai",
+  "appDescription": "A driving safety assistant that watches weather, road hazards, warning lights and driver fatigue, and speaks short warnings.",
+  "invokeWord": "세이프가드",
+  "version": "0.2.0",
+  "actionCalls": [
+    {
+      "type": "function",
+      "function": {
+        "name": "WAKE_ME_UP",
+        "description": "Start the wake-up routine when the driver says they feel sleepy or tired: outside air, stronger fan, cooler temperature and seat ventilation, then offer the next drowsiness rest area as a waypoint.",
+        "parameters": {
+          "type": "object",
+          "properties": {},
+          "required": []
+        },
+        "component": "service"
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "REPORT_HAZARD",
+        "description": "Report a road hazard the driver sees just ahead, such as debris, an accident, ice, a pothole or a stopped vehicle, so that cars coming behind are warned.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "hazardType": {
+              "type": "string",
+              "enum": ["DEBRIS", "ACCIDENT", "ICE", "POTHOLE", "STOPPED_VEHICLE", "OTHER"],
+              "description": "The kind of hazard the driver reported."
+            }
+          },
+          "required": ["hazardType"]
+        },
+        "component": "service"
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "SAFETY_BRIEFING",
+        "description": "Read out a short safety briefing for the current drive: road condition and recommended speed, active warning lights, driving time and hazards nearby.",
+        "parameters": {
+          "type": "object",
+          "properties": {},
+          "required": []
+        },
+        "component": "service"
+      }
+    }
+  ]
+}

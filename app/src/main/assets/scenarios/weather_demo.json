@@ -1,0 +1,12 @@
+{
+  "description": "기능 ① 악천후 안전 코치 시연: 비 시작 → 과속 경고 → 감속 → 폭우(시야 확보 자동화) → 비 오는 스쿨존 → 비 그침(젖은 노면 유지)",
+  "steps": [
+    { "at": 0, "signal": { "gear": "DRIVE", "speedKmh": 90, "roadSpeedLimitKmh": 100, "wiper": "OFF", "lowBeamOn": false } },
+    { "at": 2000, "signal": { "wiper": "LOW" } },
+    { "at": 16000, "signal": { "speedKmh": 78 } },
+    { "at": 20000, "signal": { "wiper": "HIGH", "speedKmh": 60 } },
+    { "at": 34000, "signal": { "speedKmh": 45, "roadSpeedLimitKmh": 50, "cautions": [ { "type": "SCHOOL_ZONE", "remainMeters": 250 } ] } },
+    { "at": 44000, "signal": { "wiper": "OFF", "cautions": [], "roadSpeedLimitKmh": 80, "speedKmh": 60 } },
+    { "at": 60000, "reset": true }
+  ]
+}
